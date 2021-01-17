@@ -9,14 +9,22 @@ class AuthorsController < ApplicationController
 
   def create
     @author = Author.new(author_params)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 909551e1a003567fdac6835a090b07b7794c8137
     if @author.valid?
       @author.save
       redirect_to author_path(@author)
     else
       render :new
     end
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 909551e1a003567fdac6835a090b07b7794c8137
   end
 
   private
